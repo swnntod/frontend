@@ -1,0 +1,199 @@
+/* Responsive styles */
+@media (max-width: 500px) {
+  .container,
+  .container2 {
+    width: 90vw;
+    min-width: 0;
+    height: auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+  .nums {
+    width: 100%;
+    margin: 20px 0;
+    gap: 8px;
+  }
+  .nums button {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+  .starimg {
+    width: 32px;
+    height: 32px;
+    margin: 16px;
+    padding: 8px;
+  }
+  .container h2,
+  .container2 h2 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  p, .container2 h4 {
+    font-size: 0.95rem;
+    margin: 10px 10px;
+  }
+  #submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .img2 {
+    margin: 20px 0;
+  }
+  .result p {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 hsl(216, 12%, 4%) ;
+    /* display: none; */
+}
+
+.star{
+    display: inline;
+}
+
+.starimg{
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+    background-color: hsl(213, 19%, 24%);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.container h2{
+    color: white;
+    margin-left: 30px;
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+    margin: 10px 30px;
+}
+
+.nums{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 30px 0;
+    width: 400px;
+}
+
+.nums button{
+    background-color: hsl(213, 19%, 15%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    border: none;
+    color: #fff;
+    transition: background 0.1s, color 0.1s;
+}
+
+.nums button.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 8px hsl(25, 97%, 53%, 0.5);
+}
+
+.submitbtn{
+    display: flex;
+    justify-content: center;
+}
+
+#submit{
+    border: 1px solid black;
+    display: block;
+    border-radius: 60px;
+    width: 85%;
+    padding: 15px;
+    background-color: hsl(25, 97%, 53%);
+    margin: 15px 0;
+}
+
+.nums button:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/* .nums button:active{
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+} */
+
+#submit:hover{
+    background-color: #fff;
+    color: black;
+}
+
+#submit:active{
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+}
+
+
+
+
+
+.container2{
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 hsl(216, 12%, 4%) ;
+    display: none;
+}
+
+.img2{
+    display: flex;
+    justify-content: center;
+    margin: 35px 0;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+}
+
+.result p{
+    background-color: hsl(213, 19%, 24%);
+    color: hsl(25, 97%, 53%);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.container2 h2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.container2 h4{
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px;
+}
